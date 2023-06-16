@@ -16,3 +16,7 @@ begin
     U1_out <= A XOR B;
     Result <= U1_out XOR C;
 end architecture dataflow;
+
+-- Event driven semantics would allow concurrent statements
+-- hence the order used to implement a series of gates would be produce the 
+-- same result when compiled.
