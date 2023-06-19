@@ -10,3 +10,22 @@
         -- some behavioural descriptions cannot be synthesized!
 
     -- STRUCTURAL MODELLING
+
+-- precedence of operators
+ -- implied precedence
+
+-- Modelling Routing Structures
+
+-- when else structures construct
+
+-- conditional concurrent signal assignment
+
+-- precedence of operators
+ -- implied precedence
+
+-- Modelling Routing Structures
+
+-- when else structures construct
+-- relational operators and their precedence
+
+-- selective conditional concurrent signal assignment

@@ -1,3 +1,6 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
 -- Concurrent Statements
 
 -- Combinatorial circuits (Shifters and Rotators)
@@ -28,9 +31,6 @@ C <= A rol 1;
     -- inputs X, Y and CIN, will have S, COUT as output with an XOR gate.
     -- COUT circuit has three AND gates fed from the input all fed into another XOR gate.
 
-library ieee;
-use ieee.std_logic_1164.all;
-
 entity fa1b is
     port
     (
@@ -44,10 +44,3 @@ end entity fa1b;
 
 architecture
 
-
--- precedence of operators
- -- implied precedence
-
--- Modelling Routing Structures
-
--- when else structures construct

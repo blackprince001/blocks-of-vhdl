@@ -1,3 +1,6 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
 -- DATA TYPES
     -- integer: Minimal range -(2 ^ 31 - 1) to (2 ^ 31 - 1)
     -- boolean:
@@ -22,9 +25,9 @@
     -- you can use them in generics
 
     -- SIGNALs
-Signal a: STD_LOGIC;
-Signal b: STD_LOGIC_VECTOR(3 Downto 0);
-Signal c: STD_LOGIC_VECTOR(15 Downto 0);
+Signal a: std_logic_vector(3 Downto 1);
+Signal b: std_logic_vector(3 Downto 0);
+Signal c: std_logic_vector(15 Downto 0);
 
 a <= 1;
 b <= '0000';
@@ -35,10 +38,10 @@ e <= O"123";
     -- concatenation works with data types when the resulting register where the data is stored
     -- is of high value. eg. two 2-bit values can be concatenated and stored in c if is has bits greater than 4.
 
-Signal addr : STD_LOGIC_VECTOR(3 downto 0);
-Signal data : STD_LOGIC_VECTOR(4 downto 0);
-Signal curl : STD_LOGIC_VECTOR(1 downto 0);
-Signal data_bus : STD_LOGIC_VECTOR(10 downto 0);
+Signal addr : std_logic_vector(3 downto 0);
+Signal data : std_logic_vector(4 downto 0);
+Signal curl : std_logic_vector(1 downto 0);
+Signal data_bus : std_logic_vector(10 downto 0);
 
 data_bus <= addr &  data & curl; -- bus can take all the bits from the other signals.
 
