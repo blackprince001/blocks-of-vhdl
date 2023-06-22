@@ -44,3 +44,17 @@ end entity fa1b;
 
 architecture
 
+-- combinational circuits building blocks
+    -- n-bit simple shifters
+        -- right shift
+        -- left shift
+
+-- wanted: y = ab + cd
+signal a: std_logic_vector(3 downto 0);
+signal b: std_logic_vector(3 downto 0);
+signal c: std_logic_vector(3 downto 0);
+signal d: std_logic_vector(3 downto 0);
+
+signal y: std_logic_vector(3 downto 0);
+
+y <= (a and b) + (c and d);
