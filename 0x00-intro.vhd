@@ -1,10 +1,10 @@
 -- variable names are case insensitive.
 -- no forward slashes in names.
 -- do not use two or more consecutive underscore characters.
--- all names and labes in a given entity or architecture must be unique.
+-- all names and lables in a given entity or architecture must be unique.
 
 -- Numerics, Bits (in single quotes), Strings (in double quotes), Bit Strings (prefix with double quotes)
--- concatenation "1111" & "0000" => "1111_0000
+-- concatenation "1111" & "0000" => "1111_0000"
 
 -- signal model real physical wires
 -- variables for programming constructs
