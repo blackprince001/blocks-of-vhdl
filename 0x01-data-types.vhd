@@ -45,3 +45,14 @@ Signal data_bus : std_logic_vector(10 downto 0);
 
 data_bus <= addr &  data & curl; -- bus can take all the bits from the other signals.
 
+-- bit vectors
+
+entity system2 is
+    port (
+        bus_in : in Bit_vector(31 downto 0); -- 32 bit input bus for system2
+        bus_out: out Bit_vector(31 downto 0) -- 32 bit output bus for system2
+    );
+end system2;
+
+-- we can index bit_vectors by just calling out the index in the vector
+a <= bus_in(12); -- would point to the 13th bit supposer bus_in is a bit_vector of size N >= 13
